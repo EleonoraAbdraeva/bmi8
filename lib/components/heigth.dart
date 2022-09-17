@@ -14,6 +14,31 @@ class Heith extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Text(AppText.heigth, style: AppTextStyle.greyTextStyle),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text('$height', style: AppTextStyle.greyTextStyle),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 22),
+          child: SizedBox(
+            width: double.infinity,
+            child: CupertinoSlider(
+              value: height.toDouble(),
+              max: 300,
+              activeColor: AppColor.whiteText,
+              thumColor: AppColor.buttonColor,
+              onChanged: onChanged,
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }

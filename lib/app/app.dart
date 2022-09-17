@@ -1,4 +1,4 @@
-import 'package:bmi8/views/home_view.dart';
+import 'package:bmi8/vрiews/home_view.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
