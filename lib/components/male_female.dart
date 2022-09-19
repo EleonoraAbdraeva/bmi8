@@ -17,8 +17,8 @@ class MaleFemale extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       Icon(icon, size: 80, color: !isFemale ? AppColor.button2Color : null),
-      c
-    onst SizedBox((height: 10),
+      y
+    const SizedBox((height: 10),
     Text(text, style:AppTextStyle.greyTextStyle),],);
   }
 }
